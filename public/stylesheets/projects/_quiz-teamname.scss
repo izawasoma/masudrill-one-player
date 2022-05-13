@@ -1,0 +1,23 @@
+@import "../variables";
+
+.p-quiz-teamname{
+    width: fit-content;
+    height: 26px;
+    background-color: #0027f0;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $noto-sans-jp;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 147.88px;
+    font-size: 21px;
+    line-height: 22px;
+    padding: 0px 3px 1px 3px;
+    letter-spacing: -1px;
+    color: white;
+    transform-origin: top left;
+    transform: scaleX(0.7);
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>助けマス</title>
+	<meta content="助けマス" name="title">
+	<meta content="Qさまの人気クイズ「助けマス」を再現！" name="description">
+	<meta content="クイズ" name="keywords">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="p-game-control__button--red" id="previewStart" style="position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%) scale(5);">開始</div>
+	<main class="p-game">
+		<h1>助けマス | プレイ画面</h1>
+		<section class="p-game-display" id="gameMainDisplay">
+			<!-- 左側のディスプレイ -->
+			<div class="p-game-display__quiz-display">
+				<div class="p-quiz-display__contents-wrap">
+					<div class="p-quiz-display__contents-box">
+						<video class="p-quiz-display__contents" src="./movie/quiz/1/que/1.mp4" id="quiz_video"></video>
+						<div class="p-quiz-display__secret">?</div>
+						<div class="p-quiz-display__c-photo-wrap">
+							<img src="./img/quiz/1/c_photo/1.png" alt="">
+						</div>
+						<div class="p-quiz-display__masu-wrapper">
+						</div>
+					</div>
+				</div>
+				<div class="p-quiz-display__title"><span class="fc-red">日本の島の名前</span></div>
+				<div class="p-quiz-display__user-info">
+					<div class="p-quiz-display__comment">滋賀大学文学部卒</div>
+					<div class="p-quiz-display__user-name-age">
+						<span class="p-quiz-display__last-name">牧田</span>
+						<span class="p-quiz-display__first-name">勇紀</span>
+						<span class="p-quiz-display__age">(24)</span>
+					</div>
+				</div>
+				<div class="p-quiz-display__number">①</div>
+			</div>
+			<!-- 右側のディスプレイ -->
+			<div class="p-game-display__quiz-sub-display">
+				<div class="p-quiz-tasuke">
+					<img src="./img/material/png/frame.png" alt="" class="p-quiz-tasuke__frame">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--1">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--2">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--3">
+				</div>
+				<div class="p-quiz-timer">
+					<img src="./img/material/png/timer_back_parts.png" alt="">
+					<div class="p-quiz-timer__warning" id="warning"></div>
+					<div class="p-quiz-timer__gauge" id="gauge"><img src="./img/material/png/timer_gauge_parts.png" alt=""></div>
+					<img src="./img/material/png/timer_cover_parts.png" alt="">
+					<p class="p-quiz-timer__text">
+						<span class="p-quiz-timer__hundreds_place" id="hundreds_place"></span>
+						<span class="p-quiz-timer__ten_place" id="ten_place"></span>
+						<span class="p-quiz-timer__one_place" id="one_place"></span>
+						<span class="p-quiz-timer__unit">秒</span>
+					</p>
+				</div>
+				<div class="p-quiz-point"><div class="p-quiz-point__score">0</div><div class="p-quiz-point__unit">点</div></div>
+				<div class="p-quiz-teamname">1年生軍</div>
+				<div class="p-quiz-pass"><span class="p-quiz-pass__red">３マス</span>までヒントが貰える！</div>
+				<div class="p-quiz-telop__clear-wrap">
+					<img class="p-quiz-telop__clear" src="./img/material/SVG/clear.svg" alt="">
+				</div>
+				<div class="p-quiz-telop__time-up-wrap">
+					<img class="p-quiz-telop__time-up" src="./img/material/SVG/timeUp.svg" alt="">
+				</div>
+				<div class="p-quiz-telop__hint-wrap">
+					<img class="p-quiz-telop__hint" src="./img/material/png/moraimasu.png" alt="">
+				</div>
+				<div class="p-quiz-telop__uncorrect-wrap">
+					<img class="p-quiz-telop__uncorrect" src="./img/material/SVG/uncorrect.svg" alt="">
+				</div>
+			</div>
+			<!-- コントロールゾーン -->
+			<div class="p-game-display__control">
+				<div class="p-game-control__hint-form-block">
+					<input type="text" class="p-game-control__hint-form" id="hintForm">
+					<div class="p-game-control__button--red" id="hintDecisionBtn">決定</div>
+				</div>
+				<div class="p-game-control__answer-form-block">
+					<input type="text" class="p-game-control__answer-form" id="answerForm">
+					<div class="p-game-control__button--red" id="decisionBtn">決定</div>
+					<div class="p-game-control__button--red" id="hintBtn"><span class="p-game-control__button-text">貰いマス</span></div>
+				</div>
+				<div class="p-game-control__start-block">
+					<div class="p-game-control__button--red" id="startBtn">開始</div>
+				</div>
+			</div>
+			<%# この後ろに問題一覧情報が追加されます %>
+		</section>
+		<section class="p-game-title">
+			<div class="p-game-title__left">
+				<div class="p-game-title__left-contents">
+					<div class="p-game-title__logo"><img src="./img/material/SVG/logo.svg" alt=""></div>
+					<div class="p-game-title__title">
+					</div>
+				</div>
+			</div>
+			<div class="p-game-title__right">
+				<div class="p-game-title__right-contents">
+					<div class="p-game-title__logo"><img src="./img/material/SVG/logo.svg" alt=""></div>
+					<div class="p-game-title__title">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-game-preview-movie">
+			<video class="p-game-preview-movie__movie" src="./movie/quiz/1/list/4.mp4"></video>
+			<p class="p-game-preview-movie__title"><span class="fc-red">日本の島の名前</span></p>
+			<div class="p-game-preview-movie__num-and-point">
+				<div class="p-game-preview-movie__num">①</div>
+				<div class="p-game-preview-movie__point--q1">10<span class="p-game-preview-movie__unit">点</span></div>
+			</div>
+			<div class="p-game-preview-movie__masu-wrapper">
+				<div class="p-game-preview-movie__masu--start"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__text">島</div>
+			</div>
+		</section>
+		<section class="p-game-preview-list">
+			<p class="p-game-preview-list__title">特徴のある<span class="fc-red">日本の島の名前</span></p>
+			<div class="p-game-preview-list__list">
+				<%# ここに問題情報が追加されます %>
+			</div>
+		</section>
+	</main>
+	<audio src="./music/start.mp3" id="se_start"></audio>
+	<audio src="./music/time_up.mp3" id="se_time_up"></audio>
+	<audio src="./music/input.mp3" id="se_input"></audio>
+	<audio src="./music/decision.mp3" id="se_decision"></audio>
+	<audio src="./music/correct.mp3" id="se_correct"></audio>
+	<audio src="./music/uncorrect.mp3" id="se_uncorrect"></audio>
+	<audio src="./music/moraimasu.mp3" id="se_moraimasu"></audio>
+	<audio src="./music/cleared.mp3" id="se_cleared"></audio>
+	<audio src="./music/open.mp3" id="se_open"></audio>
+	<audio src="./music/cleared_telop.mp3" id="se_cleared_telop"></audio>
+	<audio src="./music/change.mp3" id="se_change"></audio>
+	<audio src="./music/quiz_bgm01.mp3" id="bgm_quiz_bgm01"></audio>
+	<audio src="./music/quiz_bgm02.mp3" id="bgm_quiz_bgm02"></audio>
+	<audio src="./music/quiz_bgm03.mp3" id="bgm_quiz_bgm03"></audio>
+	<audio src="./music/list.mp3" id="bgm_list"></audio>
+	<audio src="./music/title_call.mp3" id="bgm_title_call"></audio>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+	<script src="/javascripts/game_global.js"></script>
+	<script src="/javascripts/game_initial_setting.js"></script>
+	<script src="/javascripts/game_main.js"></script>
+	<script src="/javascripts/timer_event.js"></script>
+	<script src="/javascripts/timer.js"></script>
+	<script src="/javascripts/preview.js"></script>
+</body>
+
+</html>

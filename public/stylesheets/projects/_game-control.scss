@@ -1,0 +1,88 @@
+@import "../variables";
+
+.p-game-control{
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        margin-bottom:3px;
+        margin-left: 20px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: $noto-sans-jp;
+        font-size: 16px;
+        font-weight: 600;
+        &--red{
+            @extend .p-game-control__button;
+            background-color: #e3364a; /* 背景色 */
+            box-shadow: 0 3px 0 #ca1c30; /* 影の太さ・色 */
+            color: #fff;
+            &:active{
+                box-shadow: none;
+                transform: translateY(3px);
+            }
+        }
+    }
+    &__button-text{
+        font-size: 10px;
+        transform: scaleY(1.58);
+    }
+    &__answer-form-block{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    &__hint-form-block{
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    &__start-block{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__answer-form{
+        display: block;
+        border: 2px solid white;
+        background-color: blue;
+        height: 55px;
+        width: 400px;
+        color: white;
+        padding: 2px 15px 4px 15px;
+        font-size: 26px;
+        line-height: 26px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: $noto-sans-jp;
+        border-radius: 10px;
+    }
+    &__hint-form{
+        display: block;
+        border: 2px solid black;
+        background-color: yellow;
+        height: 55px;
+        width: 55px;
+        color: black;
+        padding: 2px 12px 4px 12px;
+        font-size: 26px;
+        line-height: 26px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: $noto-sans-jp;
+        border-radius: 10px;
+    }
+}

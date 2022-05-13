@@ -1,0 +1,173 @@
+@import "../variables";
+
+.p-game-preview-movie{
+    display: none;
+    width: 1056px;
+    height: 594px;
+    border: $lineMainColor 4px solid;
+    padding-bottom: 1px;
+    box-sizing: content-box;
+    background-color: $lineMainColor;
+    position: relative;
+    &__movie{
+        width: 1056px;
+        height: 594px;
+    }
+    &__title{
+        font-family: $rock;
+        font-size: 32px;
+        width: fit-content;
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        z-index: 2;
+        text-shadow: 
+        2px  2px 5px #ffffff,
+       -2px  2px 5px #ffffff,
+        2px -2px 5px #ffffff,
+       -2px -2px 5px #ffffff,
+        2px  0px 5px #ffffff,
+        0px  2px 5px #ffffff,
+       -2px  0px 5px #ffffff,
+        0px -2px 5px #ffffff;
+    }
+    &__num-and-point{
+        height: 70px;
+        display: flex;
+        position: absolute;
+        top: 14px;
+        right: 20px;
+    }
+    &__num{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $m-plus;
+        font-weight: 700;
+        font-size: 60px;
+        color: white;
+        background-color: $lineMainColor;
+    }
+    &__point{
+        width: fit-content;
+        height: 70px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: $m-plus;
+        font-weight: 700;
+        font-size: 60px;
+        color: white;
+        letter-spacing: -2px;
+        &--q1{
+            @extend .p-game-preview-movie__point;
+            background-color: #ff8600;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+        &--q2{
+            @extend .p-game-preview-movie__point;
+            background-color: #ff7600;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+        &--q3{
+            @extend .p-game-preview-movie__point;
+            background-color: #ff4f03;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+        &--q4{
+            @extend .p-game-preview-movie__point;
+            background-color: #fe3f18;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+        &--q5{
+            @extend .p-game-preview-movie__point;
+            background-color: #ff2a17;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+        &--q6{
+            @extend .p-game-preview-movie__point;
+            background-color: #e41c17;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+        &--q7{
+            @extend .p-game-preview-movie__point;
+            background-color: #e3161a;
+            color: #ffef4c;
+            span{
+                padding: 0 2px 6px 5px;
+                font-size: 42px;
+            }
+        }
+    }
+    &__masu-wrapper{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 2;
+        align-items: center;
+    }
+    &__masu{
+        width: 85px;
+        height: 85px;
+        border: #ff0000 4px solid;
+        background-color: rgb(255, 255, 255);
+        &--start{
+            @extend .p-game-preview-movie__masu;
+        }
+        &--nomal{
+            @extend .p-game-preview-movie__masu;
+            margin-left: -4px;
+        }
+    }
+    &__text{
+        font-family: $noto-serif;
+        font-size: 75px;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+        text-shadow: 
+        2px  2px 0px #ffffff,
+       -2px  2px 0px #ffffff,
+        2px -2px 0px #ffffff,
+       -2px -2px 0px #ffffff,
+        2px  0px 0px #ffffff,
+        0px  2px 0px #ffffff,
+       -2px  0px 0px #ffffff,
+        0px -2px 0px #ffffff;
+        margin-left: 3px;
+        padding-bottom: 4px;
+        line-height: 65px;
+        &--start{
+            @extend .p-game-preview-movie__text;
+        }
+        &--nomal{
+            @extend .p-game-preview-movie__text;
+            margin-left: -4px;
+        }
+    }
+}

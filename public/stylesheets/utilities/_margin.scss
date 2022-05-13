@@ -1,0 +1,39 @@
+.mb{
+    &20{
+        margin-bottom: 20px;
+    }
+    &30{
+        margin-bottom: 30px;
+    }
+    &40{
+        margin-bottom: 40px;
+    }
+    &50{
+        margin-bottom: 50px;
+    }
+    &60{
+        margin-bottom: 60px;
+    }
+}
+.mt{
+    &20{
+       margin-top: 20px;
+    }
+    &30{
+        margin-top: 30px;
+    }
+    &40{
+        margin-top: 40px;
+    }
+    &50{
+        margin-top: 50px;
+    }
+    &60{
+        margin-top: 60px;
+    }
+}
+
+.mc{
+    margin-left: auto;
+    margin-right: auto;
+}

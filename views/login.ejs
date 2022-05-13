@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>助けマス | 会員登録</title>
+	<meta content="助けマス" name="title">
+	<meta content="Qさまの人気クイズ「助けマス」を再現！" name="description">
+	<meta content="クイズ" name="keywords">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<main class="p-top-main l-main">
+		<h1>助けマス | 会員登録</h1>
+		<form action="" method="post" class="l-form">
+			<div class="l-form-wrapper">
+				<div class="l-form-wrapper__input-wrap">
+					<p class="l-form-wrapper__input-title">ログインID
+					</p>	
+					<p class="l-form-wrapper__input-explain"></p>
+					<input class="l-form-wrapper__input" type="text"  placeholder="" name="id" value="<%= id %>">
+				</div>
+				<div class="l-form-wrapper__input-wrap">
+					<p class="l-form-wrapper__input-title">パスワード
+					</p>	
+					<p class="l-form-wrapper__input-explain"></p>
+					<input class="l-form-wrapper__input" type="text" name="pass" value="">
+				</div>
+				<p class="l-form__total-error" id="total-error"><%= (typeof error == "undefined") ? "" : error %></p>
+				<button type="submit" class="c-upper-light-button--blue mc mt50">ログイン</button>
+			</div>
+		</form>	
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+	<script src="/javascripts/chat.js"></script>
+</body>
+
+</html>

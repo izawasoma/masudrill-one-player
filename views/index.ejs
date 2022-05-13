@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>助けマス</title>
+	<meta content="助けマス" name="title">
+	<meta content="Qさまの人気クイズ「助けマス」を再現！" name="description">
+	<meta content="クイズ" name="keywords">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<main class="p-index-main l-main">
+		<h1>助けマス</h1>
+		<p class="p-index-main__title"><img src="./img/material/SVG/logo.svg" alt="logo"></p>
+		<div class="p-index-main__link-btn--login c-upper-light-button--blue"><a href="./login">ログイン</a></div>
+		<div class="p-index-main__link-btn--join c-upper-light-button--blue"><a href="./entry">会員登録</a></div>
+	</main>
+	<p><%= msg %></p>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+	<script src="/javascripts/chat.js"></script>
+</body>
+
+</html>

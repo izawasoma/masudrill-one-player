@@ -1,0 +1,228 @@
+@import "../variables";
+
+.p-game-preview-list{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &__list{
+        width: 1200px;
+        height: 520px;
+        background-color: $lineMainColor;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        padding: 5px;
+    }
+    &__contents{
+        background-color: white;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &--q1{
+            @extend .p-game-preview-list__contents;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &--q2{
+            @extend .p-game-preview-list__contents;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        &--q3{
+            @extend .p-game-preview-list__contents;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        &--q4{
+            @extend .p-game-preview-list__contents;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &--q5{
+            @extend .p-game-preview-list__contents;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        &--q6{
+            @extend .p-game-preview-list__contents;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        &--q7{
+            @extend .p-game-preview-list__contents;
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+    }
+    /* 問題番号 */
+    &__number{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $m-plus;
+        font-weight: 700;
+        font-size: 28px;
+        color: white;
+        background-color: #4A4E4C;
+    }
+    /* 得点 */
+    &__point{
+        width: fit-content;
+        height: 32px;
+        padding: 0 5px;
+        position: absolute;
+        top: 0;
+        left: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: $m-plus;
+        font-weight: 700;
+        font-size: 28px;
+        color: white;
+        &--q1{
+            @extend .p-game-preview-list__point;
+            background-color: #ff8600;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+        &--q2{
+            @extend .p-game-preview-list__point;
+            background-color: #ff7600;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+        &--q3{
+            @extend .p-game-preview-list__point;
+            background-color: #ff4f03;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+        &--q4{
+            @extend .p-game-preview-list__point;
+            background-color: #fe3f18;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+        &--q5{
+            @extend .p-game-preview-list__point;
+            background-color: #ff2a17;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+        &--q6{
+            @extend .p-game-preview-list__point;
+            background-color: #e41c17;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+        &--q7{
+            @extend .p-game-preview-list__point;
+            background-color: #e3161a;
+            color: #ffef4c;
+            span{
+                padding: 0 2px 2px 2px;
+                font-size: 19px;
+            }
+        }
+    }
+    /* 穴埋め部分 */
+    &__masu-wrapper{
+        width: fit-content;
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%) scaleX(1.0);
+    }
+    &__masu{
+        width: 32px;
+        height: 32px;
+        border: 3px solid red;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $noto-sans-jp;
+        font-weight: 600;
+        color: red;
+        font-size: 25px;
+        line-height: 22px;
+        &--start{
+            @extend .p-game-preview-list__masu;
+            margin-left: 0px;
+        }
+        &--nomal{
+            @extend .p-game-preview-list__masu;
+            margin-left: -3px;
+        }
+    }
+    &__text{
+        font-family: $noto-serif;
+        color: red;
+        font-weight: 900;
+        line-height: 28px;
+        font-size: 28px;
+        padding-top: 1px;
+        text-shadow    : 
+         1px  1px 0px #ffffff,
+        -1px  1px 0px #ffffff,
+         1px -1px 0px #ffffff,
+        -1px -1px 0px #ffffff,
+         1px  0px 0px #ffffff,
+         0px  1px 0px #ffffff,
+        -1px  0px 0px #ffffff,
+         0px -1px 0px #ffffff;
+        &--start{
+            @extend .p-game-preview-list__text;
+        }
+        &--nomal{
+            @extend .p-game-preview-list__text;
+            padding-left: 2px;
+        }
+    }
+    &__title{
+        font-family: $rock;
+        font-size: 46px;
+        width: fit-content;
+        height: fit-content;
+        padding: 4px 30px;
+        margin-bottom: 20px;
+        padding-bottom: 7px;
+        background-color: #FED506;
+        border: $lineMainColor 3px solid;
+        text-shadow: 
+        2px  2px 5px #ffffff,
+       -2px  2px 5px #ffffff,
+        2px -2px 5px #ffffff,
+       -2px -2px 5px #ffffff,
+        2px  0px 5px #ffffff,
+        0px  2px 5px #ffffff,
+       -2px  0px 5px #ffffff,
+        0px -2px 5px #ffffff;
+    }
+}

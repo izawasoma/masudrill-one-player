@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>助けマス</title>
+	<meta content="助けマス" name="title">
+	<meta content="Qさまの人気クイズ「助けマス」を再現！" name="description">
+	<meta content="クイズ" name="keywords">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<main class="p-game">
+		<h1>助けマス | プレイ画面</h1>
+		<section class="p-room-select" id="room-select-display">
+			<!-- <p class="p-room-select__title"><img src="./img/material/SVG/logo.svg" alt="logo"></p> -->
+			<div class="p-room-select__link-btn--login c-upper-light-button--blue" id="makeRoom">ルームを作成</div>
+			<div class="p-room-select__link-btn--join c-upper-light-button--blue" id="entryRoom">ルームに参加</div>
+		</section>
+		<section class="p-room-wait" id="wait-display">
+			<table class="p-room-wait__table" id="wait-display-member">
+				<tr class="p-room-wait__tr">
+					<th class="p-room-wait__th">メンバー1</th>
+					<td class="p-room-wait__td"></td>
+					<td class="p-room-wait__order">1</td>
+				</tr>
+				<tr class="p-room-wait__tr">
+					<th class="p-room-wait__th">メンバー2</th>
+					<td class="p-room-wait__td"></td>
+					<td class="p-room-wait__order">2</td>
+				</tr>
+				<tr class="p-room-wait__tr">
+					<th class="p-room-wait__th">メンバー3</th>
+					<td class="p-room-wait__td"></td>
+					<td class="p-room-wait__order">3</td>
+				</tr>
+				<tr class="p-room-wait__tr">
+					<th class="p-room-wait__th">メンバー4</th>
+					<td class="p-room-wait__td"></td>
+					<td class="p-room-wait__order">4</td>
+				</tr>
+				<tr class="p-room-wait__tr">
+					<th class="p-room-wait__th">メンバー5</th>
+					<td class="p-room-wait__td"></td>
+					<td class="p-room-wait__order">5</td>
+				</tr>
+				<tr class="p-room-wait__tr">
+					<th class="p-room-wait__th">メンバー6</th>
+					<td class="p-room-wait__td"></td>
+					<td class="p-room-wait__order">6</td>
+				</tr>
+			</table>
+			<div class="p-room-wait__room-code">
+				<p id="p-game-wait-room-id">ルーム番号：</p>
+				<p id="p-game-wait-team-name">チーム名：？？？？</p>
+			</div>
+			<div class="p-room-wait__option-box">
+				<p class="p-room-wait__now-waiting" id="waiting-member">メンバーを待っています…</p>
+				<p class="p-room-wait__now-waiting" id="waiting-member-name-setting-child">親がチーム名を設定しています…</p>
+				<p class="p-room-wait__now-waiting" id="waiting-order-setting-child">親が回答順を設定しています…</p>
+				<div class="p-room-wait__setting1" id="waiting-member-name-setting-parent">
+					<div class="l-form-wrapper">
+						<div class="l-form-wrapper__input-wrap">
+							<p class="l-form-wrapper__input-title">チーム名
+							</p>
+							<p class="l-form-wrapper__input-explain">チーム名を最大６文字で設定してください。
+							</p>	
+							<input class="l-form-wrapper__input" type="text"  placeholder="例）インテリ軍団" id="team-name-form">
+							<p class="l-form-wrapper__input-error" id="team-name-form"></p>
+						</div>
+						<button type="button" class="c-upper-light-button--blue mc mt50" id="team-name-decide">決定</button>
+					</div>
+				</div>
+				<div class="p-room-wait__setting2" id="waiting-order-setting-parent">
+					<button type="button" class="c-upper-light-button--blue mc mt50" id="order-setting-decide">決定</button>
+					<button type="button" class="c-upper-light-button--blue mc mt50" id="order-setting-reset">リセット</button>
+				</div>
+				<div class="p-room-wait__setting2" id="waiting-ready-check">
+					<table class="p-room-wait__ready-table">
+						<tr id="p-room-wait__ready-member">
+						</tr>
+						<tr id="p-room-wait__ready-state">
+						</tr>
+					</table>
+					<button type="button" class="c-upper-light-button--blue mc mt50" id="waiting-ready">準備完了</button>
+				</div>
+			</div>
+		</section>
+		<section class="p-room-entry" id="room-entry">
+			<form action="" method="post" class="l-form">
+				<div class="l-form-wrapper">
+					<div class="l-form-wrapper__input-wrap">
+						<p class="l-form-wrapper__input-title">ルームコード
+						</p>
+						<p class="l-form-wrapper__input-explain">4桁の数字から成るルームコードを入力してください</p>	
+						<input class="l-form-wrapper__input" type="text"  placeholder="例）0123" id="room-entry-form">
+						<p class="l-form-wrapper__input-error" id="room-entry-error"></p>
+					</div>
+					<button type="button" class="c-upper-light-button--blue mc mt50" id="room-entry-decide">入室</button>
+				</div>
+			</form>	
+		</section>
+	</main>
+	<script>
+		let user_id = '<%= user_id %>';
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+	<script src="/javascripts/room.js"></script>
+</body>
+
+</html>

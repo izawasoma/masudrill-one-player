@@ -1,0 +1,72 @@
+@import "../variables";
+
+.p-quiz-tasuke{
+    height: 44px;
+    width: fit-content;
+    position: relative;
+    &__frame{
+        height: 100%;
+    }
+    &__heart{
+        height: 98%;
+        z-index: 10;
+        transform-origin: top;
+        &--1{
+            @extend .p-quiz-tasuke__heart;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 18.5px;
+        }
+        &--2{
+            @extend .p-quiz-tasuke__heart;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 62.3px;
+        }
+        &--3{
+            @extend .p-quiz-tasuke__heart;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 105px;
+        }
+        &--1anime{
+            @extend .p-quiz-tasuke__heart;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 18.5px;
+            animation: tasuke 0.28s ease-out;
+            transform: scale(1.4) translateY(-50%);
+        }
+        &--2anime{
+            @extend .p-quiz-tasuke__heart;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 62.3px;
+            animation: tasuke 0.28s ease-out;
+            transform: scale(1.4) translateY(-50%);
+        }
+        &--3anime{
+            @extend .p-quiz-tasuke__heart;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 105px;
+            animation: tasuke 0.28s ease-out;
+            transform: scale(1.4) translateY(-50%);
+        }
+    }
+}
+
+@keyframes tasuke{
+    0%{
+        transform: scale(1.0) translateY(-50%);
+    }
+    100%{
+        transform: scale(1.4) translateY(-50%);
+    }
+}

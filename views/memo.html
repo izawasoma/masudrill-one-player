@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>助けマス</title>
+	<meta content="助けマス" name="title">
+	<meta content="Qさまの人気クイズ「助けマス」を再現！" name="description">
+	<meta content="クイズ" name="keywords">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<main class="p-game">
+		<h1>助けマス | プレイ画面</h1>
+		<section class="p-game-display">
+			<!-- 左側のディスプレイ -->
+			<div class="p-game-display__quiz-display">
+				<video class="p-quiz-display__contents" src="./movie/quiz/0/que/1.mp4"></video>
+				<div class="p-quiz-display__title"><span class="fc-red">日本の島の名前</span></div>
+				<div class="p-quiz-display__user-info">
+					<div class="p-quiz-display__comment">滋賀大学文学部卒</div>
+					<div class="p-quiz-display__user-name-age">
+						<span class="p-quiz-display__last-name">牧田</span>
+						<span class="p-quiz-display__first-name">勇紀</span>
+						<span class="p-quiz-display__age">(24)</span>
+					</div>
+				</div>
+				<div class="p-quiz-display__number">①</div>
+				<div class="p-quiz-display__masu-wrapper">
+					<div class="p-quiz-display__masu--start"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__text">島</div>
+				</div>
+			</div>
+			<!-- 右側のディスプレイ -->
+			<div class="p-game-display__quiz-sub-display">
+				<div class="p-quiz-tasuke">
+					<img src="./img/material/png/frame.png" alt="" class="p-quiz-tasuke__frame">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--1">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--2">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--3">
+				</div>
+				<div class="p-quiz-timer">
+					<img src="./img/material/png/timer_back_parts.png" alt="">
+					<div class="p-quiz-timer__warning"></div>
+					<div class="p-quiz-timer__gauge"><img src="./img/material/png/timer_gauge_parts.png" alt=""></div>
+					<img src="./img/material/png/timer_cover_parts.png" alt="">
+					<p class="p-quiz-timer__text">
+						<span class="p-quiz-timer__hundreds_place">2</span>
+						<span class="p-quiz-timer__ten_place">1</span>
+						<span class="p-quiz-timer__one_place">0</span>
+						<span class="p-quiz-timer__unit">秒</span>
+					</p>
+				</div>
+				<div class="p-quiz-point"><div class="p-quiz-point__score">250</div><div class="p-quiz-point__unit">点</div></div>
+				<div class="p-quiz-teamname">1年生軍</div>
+				<div class="p-quiz-pass"><span class="p-quiz-pass__red">パス</span>はあと<span class="p-quiz-pass__red">１</span>回</div>
+			</div>
+			<div class="p-game-display__quiz-list--q1 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/1.png);">
+					<div class="p-quiz-list__number">①</div>
+					<div class="p-quiz-list__point--q1">5<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">い</div>
+						<div  class="p-quiz-list__masu">り</div>
+						<div  class="p-quiz-list__masu">お</div>
+						<div  class="p-quiz-list__masu">も</div>
+						<div  class="p-quiz-list__masu">て</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q2 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/2.png);">
+					<div class="p-quiz-list__number">②</div>
+					<div class="p-quiz-list__point--q2">10<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">た</div>
+						<div  class="p-quiz-list__masu">ね</div>
+						<div  class="p-quiz-list__masu">が</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q3 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/3.png);">
+					<div class="p-quiz-list__number">③</div>
+					<div class="p-quiz-list__point--q3">15<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">ぐ</div>
+						<div  class="p-quiz-list__masu">ん</div>
+						<div  class="p-quiz-list__masu">か</div>
+						<div  class="p-quiz-list__masu">ん</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q4 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/4.png);">
+					<div class="p-quiz-list__number">④</div>
+					<div class="p-quiz-list__point--q4">20<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">が</div>
+						<div  class="p-quiz-list__masu">ん</div>
+						<div  class="p-quiz-list__masu">り</div>
+						<div  class="p-quiz-list__masu">ゅ</div>
+						<div  class="p-quiz-list__masu">う</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q5 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/5.png);">
+					<div class="p-quiz-list__number">⑤</div>
+					<div class="p-quiz-list__point--q5">40<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">さ</div>
+						<div  class="p-quiz-list__masu">ど</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q6 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/6.png);">
+					<div class="p-quiz-list__number">⑥</div>
+					<div class="p-quiz-list__point--q6">60<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">し</div>
+						<div  class="p-quiz-list__masu">ょ</div>
+						<div  class="p-quiz-list__masu">う</div>
+						<div  class="p-quiz-list__masu">ど</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q7 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/7.png);">
+					<div class="p-quiz-list__number">⑦</div>
+					<div class="p-quiz-list__point--q7">100<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">こ</div>
+						<div  class="p-quiz-list__masu">う</div>
+						<div  class="p-quiz-list__masu">り</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+		</section>
+		<section class="p-game-title">
+			<div class="p-game-title__left">
+				<div class="p-game-title__left-contents">
+					<div class="p-game-title__logo"><img src="./img/material/SVG/logo.svg" alt=""></div>
+					<div class="p-game-title__title">
+						<div>
+							<span class="fc-red">東大・京大</span>入試に出題された<br>
+							特徴のある<span class="fc-red">日本の島の名前</span>を答えよ
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p-game-title__right">
+				<div class="p-game-title__right-contents">
+					<div class="p-game-title__logo"><img src="./img/material/SVG/logo.svg" alt=""></div>
+					<div class="p-game-title__title">
+						<div>
+							<span class="fc-red">東大・京大</span>入試に出題された<br>
+							特徴のある<span class="fc-red">日本の島の名前</span>を答えよ
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-game-preview-movie">
+			<video class="p-game-preview-movie__movie" src="./movie/quiz/0/que/1.mp4"></video>
+			<p class="p-game-preview-movie__title"><span class="fc-red">日本の島の名前</span></p>
+			<div class="p-game-preview-movie__num-and-point">
+				<div class="p-game-preview-movie__num">①</div>
+				<div class="p-game-preview-movie__point--q1">10<span class="p-game-preview-movie__unit">点</span></div>
+			</div>
+			<div class="p-game-preview-movie__masu-wrapper">
+				<div class="p-game-preview-movie__masu--start"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__text">島</div>
+			</div>
+		</section>
+		<section class="p-game-preview-list">
+			<p class="p-game-preview-list__title">特徴のある<span class="fc-red">日本の島の名前</span></p>
+			<div class="p-game-preview-list__list">
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q1" style="background-image: url(./img/quiz/0/thumb/1.png);">
+					<div class="p-game-preview-list__number">①</div>
+					<div class="p-game-preview-list__point--q1">5<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q2" style="background-image: url(./img/quiz/0/thumb/2.png);">
+					<div class="p-game-preview-list__number">②</div>
+					<div class="p-game-preview-list__point--q2">10<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q3" style="background-image: url(./img/quiz/0/thumb/3.png);">
+					<div class="p-game-preview-list__number">③</div>
+					<div class="p-game-preview-list__point--q3">15<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q4" style="background-image: url(./img/quiz/0/thumb/4.png);">
+					<div class="p-game-preview-list__number">④</div>
+					<div class="p-game-preview-list__point--q4">20<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q5" style="background-image: url(./img/quiz/0/thumb/5.png);">
+					<div class="p-game-preview-list__number">⑤</div>
+					<div class="p-game-preview-list__point--q5">40<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q6" style="background-image: url(./img/quiz/0/thumb/6.png);">
+					<div class="p-game-preview-list__number">⑥</div>
+					<div class="p-game-preview-list__point--q6">60<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q7" style="background-image: url(./img/quiz/0/thumb/7.png);">
+					<div class="p-game-preview-list__number">⑦</div>
+					<div class="p-game-preview-list__point--q7">100<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+	<script src="/javascripts/game_initial_setting.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>助けマス</title>
+	<meta content="助けマス" name="title">
+	<meta content="Qさまの人気クイズ「助けマス」を再現！" name="description">
+	<meta content="クイズ" name="keywords">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<main class="p-game">
+		<h1>助けマス | プレイ画面</h1>
+		<section class="p-game-display" id="gameMainDisplay">
+			<!-- 左側のディスプレイ -->
+			<div class="p-game-display__quiz-display">
+				<video class="p-quiz-display__contents" src="./movie/quiz/0/que/1.mp4"></video>
+				<div class="p-quiz-display__title"><span class="fc-red">日本の島の名前</span></div>
+				<div class="p-quiz-display__user-info">
+					<div class="p-quiz-display__comment">滋賀大学文学部卒</div>
+					<div class="p-quiz-display__user-name-age">
+						<span class="p-quiz-display__last-name">牧田</span>
+						<span class="p-quiz-display__first-name">勇紀</span>
+						<span class="p-quiz-display__age">(24)</span>
+					</div>
+				</div>
+				<div class="p-quiz-display__number">①</div>
+				<div class="p-quiz-display__masu-wrapper">
+					<div class="p-quiz-display__masu--start"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__masu--nomal"></div>
+					<div class="p-quiz-display__text">島</div>
+				</div>
+			</div>
+			<!-- 右側のディスプレイ -->
+			<div class="p-game-display__quiz-sub-display">
+				<div class="p-quiz-tasuke">
+					<img src="./img/material/png/frame.png" alt="" class="p-quiz-tasuke__frame">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--1">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--2">
+					<img src="./img/material/png/heart.png" alt="" class="p-quiz-tasuke__heart--3">
+				</div>
+				<div class="p-quiz-timer">
+					<img src="./img/material/png/timer_back_parts.png" alt="">
+					<div class="p-quiz-timer__warning"></div>
+					<div class="p-quiz-timer__gauge"><img src="./img/material/png/timer_gauge_parts.png" alt=""></div>
+					<img src="./img/material/png/timer_cover_parts.png" alt="">
+					<p class="p-quiz-timer__text">
+						<span class="p-quiz-timer__hundreds_place">2</span>
+						<span class="p-quiz-timer__ten_place">1</span>
+						<span class="p-quiz-timer__one_place">0</span>
+						<span class="p-quiz-timer__unit">秒</span>
+					</p>
+				</div>
+				<div class="p-quiz-point"><div class="p-quiz-point__score">250</div><div class="p-quiz-point__unit">点</div></div>
+				<div class="p-quiz-teamname">1年生軍</div>
+				<div class="p-quiz-pass"><span class="p-quiz-pass__red">パス</span>はあと<span class="p-quiz-pass__red">１</span>回</div>
+			</div>
+			<!-- 問題リスト -->
+			<div class="p-game-display__quiz-list--q1 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/1.png);">
+					<div class="p-quiz-list__number">①</div>
+					<div class="p-quiz-list__point--q1">5<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">い</div>
+						<div  class="p-quiz-list__masu">り</div>
+						<div  class="p-quiz-list__masu">お</div>
+						<div  class="p-quiz-list__masu">も</div>
+						<div  class="p-quiz-list__masu">て</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q2 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/2.png);">
+					<div class="p-quiz-list__number">②</div>
+					<div class="p-quiz-list__point--q2">10<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">た</div>
+						<div  class="p-quiz-list__masu">ね</div>
+						<div  class="p-quiz-list__masu">が</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q3 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/3.png);">
+					<div class="p-quiz-list__number">③</div>
+					<div class="p-quiz-list__point--q3">15<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">ぐ</div>
+						<div  class="p-quiz-list__masu">ん</div>
+						<div  class="p-quiz-list__masu">か</div>
+						<div  class="p-quiz-list__masu">ん</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q4 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/4.png);">
+					<div class="p-quiz-list__number">④</div>
+					<div class="p-quiz-list__point--q4">20<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">が</div>
+						<div  class="p-quiz-list__masu">ん</div>
+						<div  class="p-quiz-list__masu">り</div>
+						<div  class="p-quiz-list__masu">ゅ</div>
+						<div  class="p-quiz-list__masu">う</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q5 p-quiz-list">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents" style="background-image: url(./img/quiz/0/thumb/5.png);">
+					<div class="p-quiz-list__number">⑤</div>
+					<div class="p-quiz-list__point--q5">40<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">さ</div>
+						<div  class="p-quiz-list__masu">ど</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame">
+					<div class="p-quiz-list__flame-upper"></div>
+					<div class="p-quiz-list__flame-bottom"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+			<div class="p-game-display__quiz-list--q6andq7 p-quiz-list--q6andq7">
+				<!-- 名前 -->
+				<div class="p-quiz-list__user-name--q6andq7"><span>滋賀県出身</span>牧田</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents--q6" style="background-image: url(./img/quiz/0/thumb/6.png);">
+					<div class="p-quiz-list__number">⑥</div>
+					<div class="p-quiz-list__point--q6">60<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">し</div>
+						<div  class="p-quiz-list__masu">ょ</div>
+						<div  class="p-quiz-list__masu">う</div>
+						<div  class="p-quiz-list__masu">ど</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-quiz-list__contents--q7" style="background-image: url(./img/quiz/0/thumb/7.png);">
+					<div class="p-quiz-list__number">⑦</div>
+					<div class="p-quiz-list__point--q7">100<span>点</span></div>
+					<div class="p-quiz-list__masu-wrapper">
+						<div  class="p-quiz-list__masu--start">こ</div>
+						<div  class="p-quiz-list__masu">う</div>
+						<div  class="p-quiz-list__masu">り</div>
+						<div  class="p-quiz-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- アクティブフレームや影など -->
+				<div class="p-quiz-list__flame--q6andq7">
+					<div class="p-quiz-list__flame-upper-left"></div>
+					<div class="p-quiz-list__flame-upper-right"></div>
+					<div class="p-quiz-list__flame-bottom-left"></div>
+					<div class="p-quiz-list__flame-bottom-right"></div>
+				</div>
+				<div class="p-quiz-list__shadow--disactive"></div>
+			</div>
+		</section>
+		<section class="p-game-title">
+			<div class="p-game-title__left">
+				<div class="p-game-title__left-contents">
+					<div class="p-game-title__logo"><img src="./img/material/SVG/logo.svg" alt=""></div>
+					<div class="p-game-title__title">
+						<div>
+							<span class="fc-red">東大・京大</span>入試に出題された<br>
+							特徴のある<span class="fc-red">日本の島の名前</span>を答えよ
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p-game-title__right">
+				<div class="p-game-title__right-contents">
+					<div class="p-game-title__logo"><img src="./img/material/SVG/logo.svg" alt=""></div>
+					<div class="p-game-title__title">
+						<div>
+							<span class="fc-red">東大・京大</span>入試に出題された<br>
+							特徴のある<span class="fc-red">日本の島の名前</span>を答えよ
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-game-preview-movie">
+			<video class="p-game-preview-movie__movie" src="./movie/quiz/0/que/1.mp4"></video>
+			<p class="p-game-preview-movie__title"><span class="fc-red">日本の島の名前</span></p>
+			<div class="p-game-preview-movie__num-and-point">
+				<div class="p-game-preview-movie__num">①</div>
+				<div class="p-game-preview-movie__point--q1">10<span class="p-game-preview-movie__unit">点</span></div>
+			</div>
+			<div class="p-game-preview-movie__masu-wrapper">
+				<div class="p-game-preview-movie__masu--start"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__masu--nomal"></div>
+				<div class="p-game-preview-movie__text">島</div>
+			</div>
+		</section>
+		<section class="p-game-preview-list">
+			<p class="p-game-preview-list__title">特徴のある<span class="fc-red">日本の島の名前</span></p>
+			<div class="p-game-preview-list__list">
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q1" style="background-image: url(./img/quiz/0/thumb/1.png);">
+					<div class="p-game-preview-list__number">①</div>
+					<div class="p-game-preview-list__point--q1">5<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q2" style="background-image: url(./img/quiz/0/thumb/2.png);">
+					<div class="p-game-preview-list__number">②</div>
+					<div class="p-game-preview-list__point--q2">10<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q3" style="background-image: url(./img/quiz/0/thumb/3.png);">
+					<div class="p-game-preview-list__number">③</div>
+					<div class="p-game-preview-list__point--q3">15<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q4" style="background-image: url(./img/quiz/0/thumb/4.png);">
+					<div class="p-game-preview-list__number">④</div>
+					<div class="p-game-preview-list__point--q4">20<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q5" style="background-image: url(./img/quiz/0/thumb/5.png);">
+					<div class="p-game-preview-list__number">⑤</div>
+					<div class="p-game-preview-list__point--q5">40<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q6" style="background-image: url(./img/quiz/0/thumb/6.png);">
+					<div class="p-game-preview-list__number">⑥</div>
+					<div class="p-game-preview-list__point--q6">60<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="p-game-preview-list__contents--q7" style="background-image: url(./img/quiz/0/thumb/7.png);">
+					<div class="p-game-preview-list__number">⑦</div>
+					<div class="p-game-preview-list__point--q7">100<span>点</span></div>
+					<div class="p-game-preview-list__masu-wrapper">
+						<div  class="p-game-preview-list__masu--start"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__masu"></div>
+						<div  class="p-game-preview-list__text--nomal">島</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+	<script src="/javascripts/game_initial_setting.js"></script>
+</body>
+
+</html>

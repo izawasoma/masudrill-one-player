@@ -1,0 +1,24 @@
+@import "../variables";
+
+.p-quiz-pass{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 7px;
+    top: 48px;
+    font-size: 16px;
+    font-family: $m-plus;
+    font-weight: 900;
+    text-shadow    : 
+       1px  1px 3px #ffffff,
+      -1px  1px 3px #ffffff,
+       1px -1px 3px #ffffff,
+      -1px -1px 3px #ffffff,
+       1px  0px 3px #ffffff,
+       0px  1px 3px #ffffff,
+      -1px  0px 3px #ffffff,
+       0px -1px 3px #ffffff; 
+    &__red{
+        color: red;
+    }
+}

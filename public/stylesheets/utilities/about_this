@@ -1,0 +1,5 @@
+ComponentとProjectレイヤーのObjectのモディファイアで解決することが難しい・適切では無い、わずかなスタイルの調整のための便利クラスなどを定義します。
+
+Utilityは、Component、ProjectレイヤーのObjectを無尽蔵に増やしてしまうことを防いだり、またこれらのObject自体が持つべきではないmarginの代わりに.mbs { margin-bottom: 10px }のようなUtility Objectを用いて、隣接するモジュールとの間隔をつくるといった役割を担います。
+
+またclearfixテクニックのためのルールセットが定義されているヘルパークラスも、このレイヤーに含めます。

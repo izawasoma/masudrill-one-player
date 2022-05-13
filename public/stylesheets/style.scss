@@ -1,0 +1,36 @@
+// foundation ==========
+@import "destyle";
+@import "foundation";
+
+//layout ===============
+@import "layout";
+
+//object ===============
+
+//components -----------
+@import "components/c-upper-light-button";
+
+//projects -------------
+@import "projects/index-main";
+@import "projects/game-display";
+@import "projects/quiz-list";
+@import "projects/quiz-timer";
+@import "projects/tasuke_frame";
+@import "projects/quiz-point";
+@import "projects/quiz-teamname";
+@import "projects/quiz-pass";
+@import "projects/quiz-display";
+@import "projects/game";
+@import "projects/room-wait";
+@import "projects/room-select";
+@import "projects/room-entry";
+@import "projects/game-title";
+@import "projects/game-preview-movie";
+@import "projects/game-preview-list";
+@import "projects/game-control";
+@import "projects/quiz-telop";
+
+//utilities ------------
+@import "utilities/margin";
+@import "utilities/font-color";
+@import "utilities/color";

@@ -1,0 +1,2504 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  appearance: none;
+}
+
+button[disabled],
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: url(./../img/material/jpg/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  display: none;
+}
+
+/* ページを構成するヘッダーやメインのコンテンツエリア、
+サイドバーやフッターといった
+プロジェクト共通のコンテナーブロックのスタイルを定義します。 */
+.l-main {
+  width: 100%;
+  height: 100%;
+}
+
+.l-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.l-form {
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.l-form__total-error {
+  width: 90%;
+  height: 21px;
+  font-size: 14px;
+  font-weight: 300;
+  color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.l-form-wrapper {
+  overflow-y: scroll;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.l-form-wrapper__input-wrap {
+  display: grid;
+  width: 90%;
+  height: 80px;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 40px 40px 20px;
+  margin: 20px auto;
+}
+
+.l-form-wrapper__input-title {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.l-form-wrapper__input-explain {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+.l-form-wrapper__input {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  width: 100%;
+  height: 100%;
+  background-color: #fffbe2;
+  padding: 3px 18px;
+  border-bottom: solid 1px #757575;
+  transition: border-bottom .5s , background-color .5s;
+}
+
+.l-form-wrapper__input:focus {
+  background-color: white;
+  border-bottom: solid 3px #ff7738;
+}
+
+.l-form-wrapper__input-error {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  width: 100%;
+  height: 100%;
+  padding: 3px 18px;
+  font-size: 14px;
+  font-weight: 300;
+  color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.c-upper-light-button, .c-upper-light-button--blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+}
+
+.c-upper-light-button:hover, .c-upper-light-button--blue:hover {
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+
+.c-upper-light-button--blue {
+  background-image: linear-gradient(180deg, #a49aff, #2a2cff);
+}
+
+.p-index-main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 170px 2fr 70px 0.5fr 70px 1fr;
+}
+
+.p-index-main__title {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.p-index-main__img {
+  height: 100%;
+}
+
+.p-index-main__link-btn, .p-index-main__link-btn--login, .p-index-main__link-btn--join {
+  background-color: aqua;
+  grid-column: 1/2;
+  margin: auto;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.p-index-main__link-btn--login {
+  grid-row: 4/5;
+}
+
+.p-index-main__link-btn--join {
+  grid-row: 6/7;
+}
+
+.p-game-display {
+  display: none;
+  grid-template-columns: 181px 181px 181px 181px 92px 89px 181px 181px;
+  grid-template-rows: 459px 180px 60px;
+}
+
+.p-game-display__quiz-display {
+  border-top: #4A4E4C solid 4px;
+  border-right: #4A4E4C solid 4px;
+  border-left: #4A4E4C solid 4px;
+  background-color: white;
+  grid-column: 1/6;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.p-game-display__quiz-sub-display {
+  border-top: #4A4E4C solid 4px;
+  border-right: #4A4E4C solid 4px;
+  background-color: black;
+  grid-column: 6/9;
+  grid-row: 1/2;
+  position: relative;
+}
+
+.p-game-display__quiz-list, .p-game-display__quiz-list--q1, .p-game-display__quiz-list--q2, .p-game-display__quiz-list--q3, .p-game-display__quiz-list--q4, .p-game-display__quiz-list--q5, .p-game-display__quiz-list--q6andq7 {
+  border-top: #4A4E4C solid 4px;
+  border-right: #4A4E4C solid 4px;
+  border-bottom: #4A4E4C solid 4px;
+  display: grid;
+}
+
+.p-game-display__quiz-list--q1 {
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  border-left: #4A4E4C solid 4px;
+}
+
+.p-game-display__quiz-list--q2 {
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.p-game-display__quiz-list--q3 {
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.p-game-display__quiz-list--q4 {
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+.p-game-display__quiz-list--q5 {
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 5/7;
+}
+
+.p-game-display__quiz-list--q6andq7 {
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 7/9;
+}
+
+.p-game-display__control {
+  grid-column: 1/9;
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.p-quiz-list {
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.1fr 7.9fr;
+  position: relative;
+  /* 問題番号 */
+  /* 得点 */
+  /* 穴埋め部分 */
+}
+
+.p-quiz-list--q6andq7 {
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.1fr 7.9fr;
+  position: relative;
+}
+
+.p-quiz-list__user-name {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: #0098e4;
+  font-family: "Zen Antique", serif;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 2px 5px 0;
+}
+
+.p-quiz-list__user-name span {
+  font-size: 14px;
+  padding-right: 7px;
+}
+
+.p-quiz-list__user-name--q6andq7 {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  background-color: #0098e4;
+  font-family: "Zen Antique", serif;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 2px 5px 0;
+}
+
+.p-quiz-list__user-name--q6andq7 span {
+  font-size: 14px;
+  padding-right: 7px;
+}
+
+.p-quiz-list__contents {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-quiz-list__contents--q6 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-quiz-list__contents--q7 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-quiz-list__flame {
+  position: absolute;
+  top: -2.8%;
+  left: -2.8%;
+  width: 106%;
+  height: 106%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.4fr 7.6fr;
+}
+
+.p-quiz-list__flame--q6andq7 {
+  position: absolute;
+  top: -2%;
+  left: -1%;
+  width: 102%;
+  height: 104%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.4fr 7.6fr;
+}
+
+.p-quiz-list__flame-upper-left {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 102%;
+}
+
+.p-quiz-list__flame-upper-right {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  width: 102%;
+  transform: translateX(-2%);
+}
+
+.p-quiz-list__flame-bottom-left {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.p-quiz-list__flame-bottom-right {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.p-quiz-list__shadow, .p-quiz-list__shadow--active, .p-quiz-list__shadow--disactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-quiz-list__shadow--active {
+  display: block;
+}
+
+.p-quiz-list__shadow--disactive {
+  display: none;
+}
+
+.p-quiz-list__number {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+  background-color: #4A4E4C;
+}
+
+.p-quiz-list__point, .p-quiz-list__point--q1, .p-quiz-list__point--q2, .p-quiz-list__point--q3, .p-quiz-list__point--q4, .p-quiz-list__point--q5, .p-quiz-list__point--q6, .p-quiz-list__point--q7 {
+  width: fit-content;
+  height: 22px;
+  padding: 0 5px;
+  position: absolute;
+  top: 0;
+  left: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+}
+
+.p-quiz-list__point--q1 {
+  background-color: #ff8600;
+}
+
+.p-quiz-list__point--q1 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__point--q2 {
+  background-color: #ff7600;
+}
+
+.p-quiz-list__point--q2 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__point--q3 {
+  background-color: #ff4f03;
+}
+
+.p-quiz-list__point--q3 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__point--q4 {
+  background-color: #fe3f18;
+}
+
+.p-quiz-list__point--q4 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__point--q5 {
+  background-color: #ff2a17;
+}
+
+.p-quiz-list__point--q5 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__point--q6 {
+  background-color: #e41c17;
+}
+
+.p-quiz-list__point--q6 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__point--q7 {
+  background-color: #e3161a;
+  color: #ffef4c;
+}
+
+.p-quiz-list__point--q7 span {
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.p-quiz-list__masu-wrapper {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.p-quiz-list__masu, .p-quiz-list__masu--start, .p-quiz-list__masu--nomal {
+  width: 24px;
+  height: 24px;
+  border: 3px solid red;
+  margin-left: -3px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 800;
+  color: red;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.p-quiz-list__masu--start {
+  margin-left: 0px;
+}
+
+.p-quiz-list__masu--nomal {
+  margin-left: -3px;
+}
+
+.p-quiz-list__text, .p-quiz-list__text--start, .p-quiz-list__text--nomal {
+  font-family: "Noto Sans JP", sans-serif;
+  color: red;
+  font-weight: 800;
+  font-size: 19px;
+  text-shadow: 1px  1px 1px #ffffff, -1px  1px 1px #ffffff, 1px -1px 1px #ffffff, -1px -1px 1px #ffffff, 1px  0px 1px #ffffff, 0px  1px 1px #ffffff, -1px  0px 1px #ffffff, 0px -1px 1px #ffffff;
+}
+
+.p-quiz-list__text--start {
+  padding-left: 1px;
+}
+
+.p-quiz-list__secret {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Russo One", sans-serif;
+  background-color: #e3161a;
+  color: #ffffff;
+  font-size: 95px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 22px;
+}
+
+.p-quiz-timer {
+  transform: scale(0.2);
+  transform-origin: top right;
+  right: 0;
+  top: 0;
+  width: 895px;
+  height: 220px;
+  position: absolute;
+}
+
+.p-quiz-timer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.p-quiz-timer__gauge {
+  overflow: hidden;
+  width: 875px;
+  height: 196px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.p-quiz-timer__gauge::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: -8px 0 3px -3px #b3b3b3 inset;
+}
+
+.p-quiz-timer__warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 855px;
+  height: 180px;
+  background-color: rgba(255, 0, 0, 0.2);
+  display: none;
+  margin: 20px;
+}
+
+.p-quiz-timer p {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(75%);
+}
+
+.p-quiz-timer__text {
+  display: flex;
+  align-items: flex-end;
+  font-family: verdana;
+  font-size: 180px;
+  height: 180px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #362B00, 1px 2px 1px #362B00, 1px 3px 1px #362B00, 1px 4px 1px #362B00, 1px 5px 1px #362B00, 1px 6px 1px #362B00, 1px 7px 1px #362B00, 1px 8px 1px #362B00, 1px 9px 1px #362B00, 1px 10px 1px #362B00, 1px 11px 1px #362B00, 1px 12px 1px #362B00, 1px 13px 1px #362B00;
+}
+
+.p-quiz-timer__one_place, .p-quiz-timer__ten_place, .p-quiz-timer__hundreds_place {
+  transform: scaleX(80%) rotateX(0deg);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-quiz-timer__unit {
+  transform: scaleX(80%);
+  font-size: 60px;
+}
+
+.p-quiz-tasuke {
+  height: 44px;
+  width: fit-content;
+  position: relative;
+}
+
+.p-quiz-tasuke__frame {
+  height: 100%;
+}
+
+.p-quiz-tasuke__heart, .p-quiz-tasuke__heart--1, .p-quiz-tasuke__heart--2, .p-quiz-tasuke__heart--3, .p-quiz-tasuke__heart--1anime, .p-quiz-tasuke__heart--2anime, .p-quiz-tasuke__heart--3anime {
+  height: 98%;
+  z-index: 10;
+  transform-origin: top;
+}
+
+.p-quiz-tasuke__heart--1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 18.5px;
+}
+
+.p-quiz-tasuke__heart--2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 62.3px;
+}
+
+.p-quiz-tasuke__heart--3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 105px;
+}
+
+.p-quiz-tasuke__heart--1anime {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 18.5px;
+  animation: tasuke 0.28s ease-out;
+  transform: scale(1.4) translateY(-50%);
+}
+
+.p-quiz-tasuke__heart--2anime {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 62.3px;
+  animation: tasuke 0.28s ease-out;
+  transform: scale(1.4) translateY(-50%);
+}
+
+.p-quiz-tasuke__heart--3anime {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 105px;
+  animation: tasuke 0.28s ease-out;
+  transform: scale(1.4) translateY(-50%);
+}
+
+@keyframes tasuke {
+  0% {
+    transform: scale(1) translateY(-50%);
+  }
+  100% {
+    transform: scale(1.4) translateY(-50%);
+  }
+}
+
+.p-quiz-point {
+  width: 115px;
+  height: 55px;
+  border: 5px outset #e8d95e;
+  background-color: black;
+  position: relative;
+}
+
+.p-quiz-point__score {
+  height: 100%;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #fff000;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px;
+  padding-top: 2px;
+}
+
+.p-quiz-point__unit {
+  color: white;
+  font-size: 16px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+.p-quiz-teamname {
+  width: fit-content;
+  height: 26px;
+  background-color: #0027f0;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 147.88px;
+  font-size: 21px;
+  line-height: 22px;
+  padding: 0px 3px 1px 3px;
+  letter-spacing: -1px;
+  color: white;
+  transform-origin: top left;
+  transform: scaleX(0.7);
+}
+
+.p-quiz-pass {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 7px;
+  top: 48px;
+  font-size: 16px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 900;
+  text-shadow: 1px  1px 3px #ffffff, -1px  1px 3px #ffffff, 1px -1px 3px #ffffff, -1px -1px 3px #ffffff, 1px  0px 3px #ffffff, 0px  1px 3px #ffffff, -1px  0px 3px #ffffff, 0px -1px 3px #ffffff;
+}
+
+.p-quiz-pass__red {
+  color: red;
+}
+
+.p-quiz-display__contents {
+  width: 815px;
+  height: 455px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.p-quiz-display__contents-wrap {
+  width: 815px;
+  height: 455px;
+  position: absolute;
+  left: -3px;
+  top: 0;
+  perspective: 100vh;
+}
+
+.p-quiz-display__contents-box {
+  width: 815px;
+  height: 455px;
+  position: relative;
+}
+
+.p-quiz-display__secret {
+  width: 99.3%;
+  height: 100%;
+  background-color: red;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 25px;
+  font-size: 400px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  font-family: "Russo One", sans-serif;
+  z-index: 4;
+}
+
+.p-quiz-display__title {
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 22px;
+  width: fit-content;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 5;
+  text-shadow: 2px  2px 5px #ffffff, -2px  2px 5px #ffffff, 2px -2px 5px #ffffff, -2px -2px 5px #ffffff, 2px  0px 5px #ffffff, 0px  2px 5px #ffffff, -2px  0px 5px #ffffff, 0px -2px 5px #ffffff;
+}
+
+.p-quiz-display__user-info {
+  width: 210px;
+  height: 56px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-left: #4A4E4C solid 4px;
+  border-bottom: #4A4E4C solid 4px;
+  box-sizing: border-box;
+}
+
+.p-quiz-display__comment {
+  color: blue;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.p-quiz-display__user-name-age {
+  color: blue;
+  font-family: "Noto Serif JP", serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.p-quiz-display__age {
+  font-size: 14px;
+}
+
+.p-quiz-display__number {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  padding: 0 0 2px 2px;
+  top: 56px;
+  right: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  background-color: #4A4E4C;
+  z-index: 2;
+}
+
+.p-quiz-display__masu-wrapper {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 3;
+  align-items: center;
+}
+
+.p-quiz-display__masu, .p-quiz-display__masu--start, .p-quiz-display__masu--nomal {
+  width: 75px;
+  height: 75px;
+  border: #ffffff 3px solid;
+  background-color: blue;
+  font-size: 68px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+
+.p-quiz-display__masu--nomal {
+  margin-left: -3px;
+}
+
+.p-quiz-display__masu-hint, .p-quiz-display__masu-hint--start, .p-quiz-display__masu-hint--nomal {
+  width: 75px;
+  height: 75px;
+  border: #ffffff 3px solid;
+  background-color: yellow;
+  font-size: 68px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+
+.p-quiz-display__masu-hint--nomal {
+  margin-left: -3px;
+}
+
+.p-quiz-display__text, .p-quiz-display__text--start, .p-quiz-display__text--nomal {
+  font-family: "Noto Serif JP", serif;
+  font-size: 65px;
+  font-weight: 900;
+  color: blue;
+  text-shadow: 2px  2px 0px #ffffff, -2px  2px 0px #ffffff, 2px -2px 0px #ffffff, -2px -2px 0px #ffffff, 2px  0px 0px #ffffff, 0px  2px 0px #ffffff, -2px  0px 0px #ffffff, 0px -2px 0px #ffffff;
+  margin-left: 3px;
+  padding-bottom: 4px;
+  line-height: 65px;
+}
+
+.p-quiz-display__text--nomal {
+  margin-left: -6px;
+}
+
+.p-quiz-display__c-photo-wrap {
+  display: none;
+  width: 99.2%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+.p-quiz-display__c-photo-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.p-game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-room-wait {
+  display: none;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 90px;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 6fr 6fr;
+  grid-template-columns: 1fr;
+}
+
+.p-room-wait__table {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 16px;
+  border-spacing: 3px;
+  border-collapse: separate;
+  background-color: #393939;
+}
+
+.p-room-wait__tr {
+  width: 100%;
+}
+
+.p-room-wait__th {
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 28px;
+}
+
+.p-room-wait__td {
+  width: 60%;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 28px;
+}
+
+.p-room-wait__order, .p-room-wait__order--select {
+  width: 10%;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 28px;
+}
+
+.p-room-wait__order--select {
+  cursor: pointer;
+}
+
+.p-room-wait__order--select:hover {
+  background-color: #ffffac;
+}
+
+.p-room-wait__order--select:active {
+  background-color: #ffacac;
+}
+
+.p-room-wait__room-code {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-room-wait__option-box {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.p-room-wait__now-waiting {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.p-room-wait__setting1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.p-room-wait__setting2 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: space-around;
+}
+
+.p-room-wait__ready-table {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  border-spacing: 3px;
+  border-collapse: separate;
+  background-color: #393939;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.p-room-wait__ready-th {
+  width: auto;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.p-room-wait__ready-td {
+  width: auto;
+  height: 30px;
+  background-color: white;
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.p-room-select {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 170px 2fr 70px 0.5fr 70px 1fr;
+}
+
+.p-room-select__title {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.p-room-select__img {
+  height: 100%;
+}
+
+.p-room-select__link-btn, .p-room-select__link-btn--login, .p-room-select__link-btn--join {
+  background-color: aqua;
+  grid-column: 1/2;
+  margin: auto;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.p-room-select__link-btn--login {
+  grid-row: 4/5;
+}
+
+.p-room-select__link-btn--join {
+  grid-row: 6/7;
+}
+
+.p-room-entry {
+  display: none;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.p-game-title {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow: hidden;
+  display: none;
+}
+
+.p-game-title__left {
+  position: absolute;
+  transition: all 400ms 0s linear;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.p-game-title__left-open {
+  margin-left: -50%;
+}
+
+.p-game-title__left-contents {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.p-game-title__right {
+  position: absolute;
+  transition: all 400ms linear;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.p-game-title__right-open {
+  margin-left: 50%;
+}
+
+.p-game-title__right-contents {
+  transform: translateX(-50%);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.p-game-title__title {
+  height: 30%;
+  width: 100%;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 72px;
+  line-height: 93px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  text-shadow: 2px  2px 5px #ffffff, -2px  2px 5px #ffffff, 2px -2px 5px #ffffff, -2px -2px 5px #ffffff, 2px  0px 5px #ffffff, 0px  2px 5px #ffffff, -2px  0px 5px #ffffff, 0px -2px 5px #ffffff;
+}
+
+.p-game-title__logo {
+  height: 20%;
+  width: fit-content;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p-game-title__logo img {
+  height: 100%;
+}
+
+.p-game-preview-movie {
+  display: none;
+  width: 1056px;
+  height: 594px;
+  border: #4A4E4C 4px solid;
+  padding-bottom: 1px;
+  box-sizing: content-box;
+  background-color: #4A4E4C;
+  position: relative;
+}
+
+.p-game-preview-movie__movie {
+  width: 1056px;
+  height: 594px;
+}
+
+.p-game-preview-movie__title {
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 32px;
+  width: fit-content;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  z-index: 2;
+  text-shadow: 2px  2px 5px #ffffff, -2px  2px 5px #ffffff, 2px -2px 5px #ffffff, -2px -2px 5px #ffffff, 2px  0px 5px #ffffff, 0px  2px 5px #ffffff, -2px  0px 5px #ffffff, 0px -2px 5px #ffffff;
+}
+
+.p-game-preview-movie__num-and-point {
+  height: 70px;
+  display: flex;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
+.p-game-preview-movie__num {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  background-color: #4A4E4C;
+}
+
+.p-game-preview-movie__point, .p-game-preview-movie__point--q1, .p-game-preview-movie__point--q2, .p-game-preview-movie__point--q3, .p-game-preview-movie__point--q4, .p-game-preview-movie__point--q5, .p-game-preview-movie__point--q6, .p-game-preview-movie__point--q7 {
+  width: fit-content;
+  height: 70px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  letter-spacing: -2px;
+}
+
+.p-game-preview-movie__point--q1 {
+  background-color: #ff8600;
+}
+
+.p-game-preview-movie__point--q1 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__point--q2 {
+  background-color: #ff7600;
+}
+
+.p-game-preview-movie__point--q2 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__point--q3 {
+  background-color: #ff4f03;
+}
+
+.p-game-preview-movie__point--q3 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__point--q4 {
+  background-color: #fe3f18;
+}
+
+.p-game-preview-movie__point--q4 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__point--q5 {
+  background-color: #ff2a17;
+}
+
+.p-game-preview-movie__point--q5 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__point--q6 {
+  background-color: #e41c17;
+}
+
+.p-game-preview-movie__point--q6 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__point--q7 {
+  background-color: #e3161a;
+  color: #ffef4c;
+}
+
+.p-game-preview-movie__point--q7 span {
+  padding: 0 2px 6px 5px;
+  font-size: 42px;
+}
+
+.p-game-preview-movie__masu-wrapper {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  align-items: center;
+}
+
+.p-game-preview-movie__masu, .p-game-preview-movie__masu--start, .p-game-preview-movie__masu--nomal {
+  width: 85px;
+  height: 85px;
+  border: #ff0000 4px solid;
+  background-color: white;
+}
+
+.p-game-preview-movie__masu--nomal {
+  margin-left: -4px;
+}
+
+.p-game-preview-movie__text, .p-game-preview-movie__text--start, .p-game-preview-movie__text--nomal {
+  font-family: "Noto Serif JP", serif;
+  font-size: 75px;
+  font-weight: 900;
+  color: black;
+  text-shadow: 2px  2px 0px #ffffff, -2px  2px 0px #ffffff, 2px -2px 0px #ffffff, -2px -2px 0px #ffffff, 2px  0px 0px #ffffff, 0px  2px 0px #ffffff, -2px  0px 0px #ffffff, 0px -2px 0px #ffffff;
+  margin-left: 3px;
+  padding-bottom: 4px;
+  line-height: 65px;
+}
+
+.p-game-preview-movie__text--nomal {
+  margin-left: -4px;
+}
+
+.p-game-preview-list {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* 問題番号 */
+  /* 得点 */
+  /* 穴埋め部分 */
+}
+
+.p-game-preview-list__list {
+  width: 1200px;
+  height: 520px;
+  background-color: #4A4E4C;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+}
+
+.p-game-preview-list__contents, .p-game-preview-list__contents--q1, .p-game-preview-list__contents--q2, .p-game-preview-list__contents--q3, .p-game-preview-list__contents--q4, .p-game-preview-list__contents--q5, .p-game-preview-list__contents--q6, .p-game-preview-list__contents--q7 {
+  background-color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.p-game-preview-list__contents--q1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.p-game-preview-list__contents--q2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.p-game-preview-list__contents--q3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.p-game-preview-list__contents--q4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.p-game-preview-list__contents--q5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.p-game-preview-list__contents--q6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.p-game-preview-list__contents--q7 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.p-game-preview-list__number {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+  background-color: #4A4E4C;
+}
+
+.p-game-preview-list__point, .p-game-preview-list__point--q1, .p-game-preview-list__point--q2, .p-game-preview-list__point--q3, .p-game-preview-list__point--q4, .p-game-preview-list__point--q5, .p-game-preview-list__point--q6, .p-game-preview-list__point--q7 {
+  width: fit-content;
+  height: 32px;
+  padding: 0 5px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+}
+
+.p-game-preview-list__point--q1 {
+  background-color: #ff8600;
+}
+
+.p-game-preview-list__point--q1 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__point--q2 {
+  background-color: #ff7600;
+}
+
+.p-game-preview-list__point--q2 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__point--q3 {
+  background-color: #ff4f03;
+}
+
+.p-game-preview-list__point--q3 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__point--q4 {
+  background-color: #fe3f18;
+}
+
+.p-game-preview-list__point--q4 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__point--q5 {
+  background-color: #ff2a17;
+}
+
+.p-game-preview-list__point--q5 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__point--q6 {
+  background-color: #e41c17;
+}
+
+.p-game-preview-list__point--q6 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__point--q7 {
+  background-color: #e3161a;
+  color: #ffef4c;
+}
+
+.p-game-preview-list__point--q7 span {
+  padding: 0 2px 2px 2px;
+  font-size: 19px;
+}
+
+.p-game-preview-list__masu-wrapper {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.p-game-preview-list__masu, .p-game-preview-list__masu--start, .p-game-preview-list__masu--nomal {
+  width: 32px;
+  height: 32px;
+  border: 3px solid red;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  color: red;
+  font-size: 25px;
+  line-height: 22px;
+}
+
+.p-game-preview-list__masu--start {
+  margin-left: 0px;
+}
+
+.p-game-preview-list__masu--nomal {
+  margin-left: -3px;
+}
+
+.p-game-preview-list__text, .p-game-preview-list__text--start, .p-game-preview-list__text--nomal {
+  font-family: "Noto Serif JP", serif;
+  color: red;
+  font-weight: 900;
+  line-height: 28px;
+  font-size: 28px;
+  padding-top: 1px;
+  text-shadow: 1px  1px 0px #ffffff, -1px  1px 0px #ffffff, 1px -1px 0px #ffffff, -1px -1px 0px #ffffff, 1px  0px 0px #ffffff, 0px  1px 0px #ffffff, -1px  0px 0px #ffffff, 0px -1px 0px #ffffff;
+}
+
+.p-game-preview-list__text--nomal {
+  padding-left: 2px;
+}
+
+.p-game-preview-list__title {
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 46px;
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 30px;
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+  background-color: #FED506;
+  border: #4A4E4C 3px solid;
+  text-shadow: 2px  2px 5px #ffffff, -2px  2px 5px #ffffff, 2px -2px 5px #ffffff, -2px -2px 5px #ffffff, 2px  0px 5px #ffffff, 0px  2px 5px #ffffff, -2px  0px 5px #ffffff, 0px -2px 5px #ffffff;
+}
+
+.p-game-control__button, .p-game-control__button--red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 3px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.p-game-control__button--red {
+  background-color: #e3364a;
+  /* 背景色 */
+  box-shadow: 0 3px 0 #ca1c30;
+  /* 影の太さ・色 */
+  color: #fff;
+}
+
+.p-game-control__button--red:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+.p-game-control__button-text {
+  font-size: 10px;
+  transform: scaleY(1.58);
+}
+
+.p-game-control__answer-form-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.p-game-control__hint-form-block {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-game-control__start-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-game-control__answer-form {
+  display: block;
+  border: 2px solid white;
+  background-color: blue;
+  height: 55px;
+  width: 400px;
+  color: white;
+  padding: 2px 15px 4px 15px;
+  font-size: 26px;
+  line-height: 26px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  border-radius: 10px;
+}
+
+.p-game-control__hint-form {
+  display: block;
+  border: 2px solid black;
+  background-color: yellow;
+  height: 55px;
+  width: 55px;
+  color: black;
+  padding: 2px 12px 4px 12px;
+  font-size: 26px;
+  line-height: 26px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  border-radius: 10px;
+}
+
+.p-quiz-telop__hint-wrap {
+  width: 236.85px;
+  height: 65px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.p-quiz-telop__hint, .p-quiz-telop__hint--animation {
+  width: 100%;
+  height: 100%;
+  transform: translateY(65px);
+}
+
+.p-quiz-telop__hint--animation {
+  transform: translateY(0px);
+  animation: hint 0.3s;
+}
+
+.p-quiz-telop__clear-wrap {
+  width: 447px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.p-quiz-telop__clear, .p-quiz-telop__clear--animation {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0.98);
+  opacity: 0;
+  transform-origin: center;
+}
+
+.p-quiz-telop__clear--animation {
+  opacity: 1;
+  animation: clear 0.28s ease-out;
+}
+
+.p-quiz-telop__time-up-wrap {
+  width: 447px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.p-quiz-telop__time-up, .p-quiz-telop__time-up--animation {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0.98) translateY(-85px);
+  transform-origin: center;
+}
+
+.p-quiz-telop__time-up--animation {
+  animation: time-up 0.28s ease-out;
+  transform: scaleX(0.98) translateY(0px);
+}
+
+@keyframes time-up {
+  0% {
+    transform: scaleX(0.98) translateY(-85px);
+  }
+  60% {
+    transform: scaleX(0.98) translateY(15px);
+  }
+  80% {
+    transform: scaleX(0.98) translateY(-10px);
+  }
+  100% {
+    transform: scaleX(0.98) translateY(0px);
+  }
+}
+
+@keyframes clear {
+  0% {
+    opacity: 1;
+    filter: blur(120px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes hint {
+  0% {
+    transform: translateY(65px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.p-quiz-telop__uncorrect-wrap {
+  width: 89.4px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: none;
+}
+
+.p-quiz-telop__uncorrect {
+  width: 100%;
+  height: 100%;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fc-red {
+  color: red;
+}
+
+.fc-red {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
