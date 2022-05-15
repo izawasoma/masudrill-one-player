@@ -146,7 +146,8 @@ function socketIO(server) {
                 sql = `SELECT * FROM quiz_parent WHERE parent_id = ${select_num};`;
                 DB.query(sql, (err, results) => {
                   if(err){
-                    console.log(red + 'SQLエラー:' + reset + "[quiz_parent]実行に失敗しました");
+                    console.log("SQLエラー:[quiz_parent]実行に失敗しました");
+                    console.log("sql:" + sql);
                     throw err
                   }
                   else{
