@@ -7,6 +7,7 @@ socket.emit("getQuestionData",select_num);
 socket.on("getQuestionData",function(data){
     quiz_child = data.quizChild;
     quiz_parent = data.quizParent[0];
+    console.log(data);
     //問題情報を取得した後は、データを用いて描画を行う
     initial_setting(quiz_child,quiz_parent,teamMember);
 });
