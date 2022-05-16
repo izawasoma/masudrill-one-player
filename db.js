@@ -20,6 +20,9 @@ function handleDisconnect() {
             console.log('ERROR.CONNECTION_DB: ', err);
             setTimeout(handleDisconnect, 1000);
         }
+        else{
+            console.log("正常に接続されました");
+        }
     });
     
     //error('PROTOCOL_CONNECTION_LOST')時に再接続

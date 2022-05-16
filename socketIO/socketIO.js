@@ -148,6 +148,7 @@ function socketIO(server) {
                   if(err){
                     console.log("SQLエラー:[quiz_parent]実行に失敗しました");
                     console.log("sql:" + sql);
+                    console.log(err);
                     throw err
                   }
                   else{
