@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>データベース接続｜mysql2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<h1>データベース接続｜mysql2</h1>
+	<main>
+		<table>
+			<% for(let i in quiz_data){ %>
+				<tr>
+				<% for(let key in quiz_data[i]){ %>
+					<td><%= quiz_data[i][key] %></td>
+				<% } %>
+				</tr>
+			<% } %>
+		</table>
+	</main>
+</body>
+
+<script>
+	let quiz_data = <% JSON.stringify(quiz_data) %>
+	console.log(quiz_data);
+</script>
+
+</html>

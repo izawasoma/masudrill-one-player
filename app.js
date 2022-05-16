@@ -9,6 +9,7 @@ var entryRouter = require('./routes/entry');
 var loginRouter = require('./routes/login');
 var gameRouter = require('./routes/game');
 var roomRouter = require('./routes/room');
+var sampleMysql2Router = require('./routes/sample_mysql2');
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use('/', entryRouter);
 app.use('/', loginRouter);
 app.use('/', gameRouter);
 app.use('/', roomRouter);
+app.use('/', sampleMysql2Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
