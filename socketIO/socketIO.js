@@ -169,7 +169,7 @@ function socketIO(server) {
                             else {
                                 quiz_child = results;
                                 console.log(quiz_parent);
-                                sio.emit("getQuestionData",{quizParent:quiz_parent,quizChild:quiz_child});
+                                socket.emit("getQuestionData",{quizParent:quiz_parent,quizChild:quiz_child});
                             }
                             connection.release();
                         });
