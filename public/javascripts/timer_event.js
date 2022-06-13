@@ -4,7 +4,6 @@ function timer_event(remain_time){
             $("#bgm_quiz_bgm01").get(0).pause();
             $("#bgm_quiz_bgm02").get(0).pause();
             $("#bgm_quiz_bgm03").get(0).play();
-            $("#bgm_quiz_bgm03").get(0).volume = 0.25;
         },100);
     }
     else if(remain_time == 0){

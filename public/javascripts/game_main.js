@@ -8,7 +8,6 @@ $(function(){
             timer();
             setTimeout(function(){
                 $("#bgm_quiz_bgm01").get(0).play();
-                $("#bgm_quiz_bgm01").get(0).volume = 0.25;
                 $("#quiz_video").get(0).play();
                 $(".p-game-control__start-block").eq(0).css("display","none");
                 $(".p-game-control__answer-form-block").eq(0).css("display","flex");
@@ -42,8 +41,7 @@ $(function(){
             //入力受付を停止
             event_stop("stop");
             //ボタン音再生
-            $("#se_decision").get(0).play();
-            $("#se_decision").get(0).volume = 1.0;
+            $("#se_decision").get(0).play();    
             //入力内容を取得
             let enterd_text = $("#answerForm").val();
             setTimeout(function(){
@@ -60,8 +58,7 @@ $(function(){
                 else{
                     //不正解時処理
                     //効果音
-                    $("#se_uncorrect").get(0).play();
-                    $("#se_uncorrect").get(0).volume = 1.0;
+                    $("#se_uncorrect").get(0).play();           
                     //不正解のテロップ
                     $(".p-quiz-telop__uncorrect-wrap").eq(0).css("display","block");
                     setTimeout(function(){
@@ -93,7 +90,6 @@ $(function(){
     $("#hintBtn").click(function(){
         //効果音再生
         $("#se_moraimasu").get(0).play();
-        $("#se_moraimasu").get(0).volume = 1.0;
         //テロップ表示
         $(".p-quiz-telop__hint").removeClass("p-quiz-telop__hint").addClass("p-quiz-telop__hint--animation");
         //映像の停止
@@ -104,8 +100,7 @@ $(function(){
         $(`.p-quiz-tasuke__heart--${remain_hint}`).eq(0).removeClass(`p-quiz-tasuke__heart--${remain_hint}`).addClass(`p-quiz-tasuke__heart--${remain_hint}anime`);
         setTimeout(function(){
             //効果音再生
-            $("#se_input").get(0).play();
-            $("#se_input").get(0).volume = 1.0;
+            $("#se_input").get(0).play();    
             //クリックした箇所から対応するoutput_textの位置と文字を算出
             hint_rewrite_key_work = String(quiz_child[stage].rewrite_key).split("");
             console.log(hint_rewrite_key_work);
@@ -171,9 +166,7 @@ $(function(){
 
     $("#hintDecisionBtn").click(function(){
         //効果音再生
-        $("#se_decision").get(0).play();
-        $("#se_decision").get(0).volume = 1.0;
-       
+        $("#se_decision").get(0).play();       
         setTimeout(function(){
             //ヒントフォームに入力された文字の取得
             let input_hint = $("#hintForm").val();
@@ -191,8 +184,7 @@ $(function(){
             }
             else{
                 //効果音
-                $("#se_uncorrect").get(0).play();
-                $("#se_uncorrect").get(0).volume = 1.0;
+                $("#se_uncorrect").get(0).play();        
                 //不正解のテロップ
                 $(".p-quiz-telop__uncorrect-wrap").eq(0).css("display","block");
                 setTimeout(function(){
@@ -343,7 +335,6 @@ function ox_judge(value,rewrite_key,output_text){
 //正解時処理
 function correct_action(challenged_stage,quiz_child,teamMember,quiz_type){
     $("#se_correct").get(0).play();
-    $("#se_correct").get(0).volume = 1.0;
     correct_color_change("red");
     $("#answerForm").val("");
     //問題タイプが「1」
@@ -374,8 +365,7 @@ function correct_action(challenged_stage,quiz_child,teamMember,quiz_type){
                         $("#quiz_video").get(0).play();
                         if(remain_time > 31){
                             $("#bgm_quiz_bgm01").get(0).pause();
-                            $("#bgm_quiz_bgm02").get(0).play();
-                            $("#bgm_quiz_bgm02").get(0).volume = 0.25;
+                            $("#bgm_quiz_bgm02").get(0).play();                    
                         }
                         event_stop("start");
                     },1300);
@@ -390,11 +380,9 @@ function correct_action(challenged_stage,quiz_child,teamMember,quiz_type){
                 $("#bgm_quiz_bgm01").get(0).pause();
                 $("#bgm_quiz_bgm02").get(0).pause();
                 $("#bgm_quiz_bgm03").get(0).pause();
-                $("#se_cleared").get(0).play();
-                $("#se_cleared").get(0).volume = 0.7;
+                $("#se_cleared").get(0).play();       
                 setTimeout(function(){
-                    $("#se_cleared_telop").get(0).play();
-                    $("#se_cleared_telop").get(0).volume = 1.0;
+                    $("#se_cleared_telop").get(0).play();           
                     $(".p-quiz-telop__clear").removeClass("p-quiz-telop__clear").addClass("p-quiz-telop__clear--animation");
                 },1000);
             },2500);

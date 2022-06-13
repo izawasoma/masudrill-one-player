@@ -10,6 +10,8 @@ socket.on("getQuestionData",function(data){
     console.log(data);
     //問題情報を取得した後は、データを用いて描画を行う
     initial_setting(quiz_child,quiz_parent,teamMember);
+    se_volume_set(0.05);
+    bgm_volume_set(0.01);
 });
 
 //game_displayの描画を行う
@@ -316,4 +318,28 @@ function setting_timer(time){
     $(".p-quiz-timer__hundreds_place").eq(0).text(arrayStr[0]);
     $(".p-quiz-timer__ten_place").eq(0).text(arrayStr[1]);
     $(".p-quiz-timer__one_place").eq(0).text(arrayStr[2]);
+}
+
+function bgm_volume_set(num){
+	document.getElementById("bgm_quiz_bgm01").volume = num;
+	document.getElementById("bgm_quiz_bgm02").volume = num;
+	document.getElementById("bgm_quiz_bgm03").volume = num;
+    document.getElementById("bgm_list").volume = num;
+	document.getElementById("bgm_title_call").volume = num;
+    console.log("BGMの音量を" + num + "にセットしました");
+}
+
+function se_volume_set(num){
+    document.getElementById("se_start").volume = num;
+	document.getElementById("se_time_up").volume = num;
+	document.getElementById("se_input").volume = num;
+	document.getElementById("se_decision").volume = num;
+	document.getElementById("se_correct").volume = num;
+	document.getElementById("se_uncorrect").volume = num;
+	document.getElementById("se_moraimasu").volume = num;
+	document.getElementById("se_cleared").volume = num;
+	document.getElementById("se_open").volume = num;
+	document.getElementById("se_cleared_telop").volume = num;
+	document.getElementById("se_change").volume = num;
+    console.log("SEの音量を" + num + "にセットしました");
 }

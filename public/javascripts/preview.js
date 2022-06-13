@@ -6,11 +6,9 @@ $(function(){
         $(".p-game-title").eq(0).css("display","block");
         $(".p-game-preview-list").eq(0).css("display","flex");
         $("#bgm_title_call").get(0).play();
-        $("#bgm_title_call").volume = 1.0;
         new Promise((resolve, reject) => {
             setTimeout(function(){
                 $("#se_open").get(0).play();
-                $("#se_open").volume = 1.0;
                 $(".p-game-title__left").eq(0).addClass("p-game-title__left-open");
                 $(".p-game-title__right").eq(0).addClass("p-game-title__right-open");
                 resolve();
@@ -19,7 +17,6 @@ $(function(){
             return new Promise((resolve, reject) => {
                 setTimeout(function(){
                     $("#bgm_list").get(0).play();
-                    $("#bgm_list").get(0).volume = 0.5;
                     resolve();
                 },500);
             })
@@ -28,7 +25,6 @@ $(function(){
                 new Promise((resolve, reject) => {
                     setTimeout(function(){
                         $("#se_change").get(0).play();
-                        $("#se_change").get(0).volume = 1.0;
                         preview_movie_set(quiz_child,quiz_parent,0);
                         $(".p-game-preview-list").eq(0).css("display","none");
                         $(".p-game-preview-movie").css("display","flex");
@@ -38,7 +34,6 @@ $(function(){
                     return new Promise((resolve, reject) => {
                         setTimeout(function(){
                             $("#se_change").get(0).play();
-                            $("#se_change").get(0).volume = 1.0;
                             preview_movie_set(quiz_child,quiz_parent,1);
                             resolve();
                         },15500);
@@ -58,7 +53,6 @@ $(function(){
                             timer();
                             setTimeout(function(){
                                 $("#bgm_quiz_bgm01").get(0).play();
-                                $("#bgm_quiz_bgm01").get(0).volume = 0.25;
                                 $("#quiz_video").get(0).play();
                                 $(".p-game-control__start-block").eq(0).css("display","none");
                                 $(".p-game-control__answer-form-block").eq(0).css("display","flex");
