@@ -7,4 +7,4 @@
 - React化
 - ストレージサービスの利用
 - データベース情報のconfig化
-- node_modulesはgitにあげてはいけない
+- node_modulesはgitにあげてはいけない…OK
